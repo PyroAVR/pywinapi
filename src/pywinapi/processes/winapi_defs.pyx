@@ -1,0 +1,34 @@
+cimport winapi_defs
+
+from enum import IntEnum
+
+class ProcessPriorityClass(IntEnum):
+    ABOVE_NORMAL_PRIORITY_CLASS = winapi_defs.process_priority_class.ABOVE_NORMAL_PRIORITY_CLASS
+    BELOW_NORMAL_PRIORITY_CLASS = winapi_defs.process_priority_class.BELOW_NORMAL_PRIORITY_CLASS
+    HIGH_PRIORITY_CLASS = winapi_defs.process_priority_class.HIGH_PRIORITY_CLASS
+    IDLE_PRIORITY_CLASS = winapi_defs.process_priority_class.IDLE_PRIORITY_CLASS
+    NORMAL_PRIORITY_CLASS = winapi_defs.process_priority_class.NORMAL_PRIORITY_CLASS
+    PROCESS_MODE_BACKGROUND_BEGIN = winapi_defs.process_priority_class.PROCESS_MODE_BACKGROUND_BEGIN
+    PROCESS_MODE_BACKGROUND_END = winapi_defs.process_priority_class.PROCESS_MODE_BACKGROUND_END
+    REALTIME_PRIORITY_CLASS = winapi_defs.process_priority_class.REALTIME_PRIORITY_CLASS
+
+
+class ThreadPriorityClass(IntEnum):
+    THREAD_MODE_BACKGROUND_BEGIN = winapi_defs.thread_priority_class.THREAD_MODE_BACKGROUND_BEGIN 
+    THREAD_MODE_BACKGROUND_END = winapi_defs.thread_priority_class.THREAD_MODE_BACKGROUND_END 
+    THREAD_PRIORITY_ABOVE_NORMAL = winapi_defs.thread_priority_class.THREAD_PRIORITY_ABOVE_NORMAL
+    THREAD_PRIORITY_BELOW_NORMAL = winapi_defs.thread_priority_class.THREAD_PRIORITY_BELOW_NORMAL
+    THREAD_PRIORITY_HIGHEST = winapi_defs.thread_priority_class.THREAD_PRIORITY_HIGHEST
+    THREAD_PRIORITY_IDLE = winapi_defs.thread_priority_class.THREAD_PRIORITY_IDLE
+    THREAD_PRIORITY_LOWEST = winapi_defs.thread_priority_class.THREAD_PRIORITY_LOWEST
+    THREAD_PRIORITY_NORMAL = winapi_defs.thread_priority_class.THREAD_PRIORITY_NORMAL
+    THREAD_PRIORITY_TIME_CRITICAL = winapi_defs.thread_priority_class.THREAD_PRIORITY_TIME_CRITICAL
+    THREAD_PRIORITY_REALTIME_N7 = winapi_defs.THREAD_PRIORITY_REALTIME_N7
+    THREAD_PRIORITY_REALTIME_N6 = winapi_defs.THREAD_PRIORITY_REALTIME_N6
+    THREAD_PRIORITY_REALTIME_N5 = winapi_defs.THREAD_PRIORITY_REALTIME_N5
+    THREAD_PRIORITY_REALTIME_N4 = winapi_defs.THREAD_PRIORITY_REALTIME_N4
+    THREAD_PRIORITY_REALTIME_N3 = winapi_defs.THREAD_PRIORITY_REALTIME_N3
+    THREAD_PRIORITY_REALTIME_3 = winapi_defs.THREAD_PRIORITY_REALTIME_3
+    THREAD_PRIORITY_REALTIME_4 = winapi_defs.THREAD_PRIORITY_REALTIME_4
+    THREAD_PRIORITY_REALTIME_5 = winapi_defs.THREAD_PRIORITY_REALTIME_5
+    THREAD_PRIORITY_REALTIME_6 = winapi_defs.THREAD_PRIORITY_REALTIME_6
